@@ -162,8 +162,6 @@ function! s:keyMappings()
     " Common key {
         noremap j gj
         noremap k gk
-        noremap J gJ
-        noremap gJ J
         noremap zl zL
         noremap zh zH
         noremap <C-J> <C-W>j<C-W>_
@@ -172,6 +170,7 @@ function! s:keyMappings()
         noremap <C-H> <C-W>h<C-W>_
 
         nnoremap Y y$
+        nnoremap U <C-R>
         nnoremap <silent> <A-Up> :-1move -0<CR><Up>==
         nnoremap <silent> <A-Down> :move +1<CR>==
         nnoremap <silent> <C-A-Up> :copy -1<CR>
@@ -517,6 +516,8 @@ function! s:plugins()
         Plugin 'Townk/vim-autoclose'
         Plugin 'tpope/vim-surround'
         Plugin 'tpope/vim-commentary'
+        Plugin 'godlygeek/tabular'
+        Plugin 'plasticboy/vim-markdown'
         Plugin 'mattn/emmet-vim'
         Plugin 'ternjs/tern_for_vim'
         "Plugin 'Valloric/YouCompleteMe'
